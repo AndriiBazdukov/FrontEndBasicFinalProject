@@ -1,0 +1,5 @@
+node_models
+.ide
+.vscode
+.publish
+node_modules
