@@ -66,7 +66,7 @@ function sprite() {
 async function images() {
   const imagemin = (await import('gulp-imagemin')).default;
   return gulp.src(paths.images.src)
-    .pipe(gulpIf(isProduction, imagemin())) // Optimize images if in production mode
+    //.pipe(gulpIf(isProduction, imagemin())) // Optimize images if in production mode
     .pipe(gulp.dest(paths.images.dest))
     .pipe(browserSync.stream()); // Stream changes to BrowserSync
 }
